@@ -13,7 +13,7 @@
 ---
 ## ✨ File naming convention
 - 파일 이름은 `사이트이름_문제번호.java`로 통일한다.
-    ex) `PR_42576.java`, `BOJ_1253.java`, ...
+    ex) `PR_42576.java`, `BOJ_1253.java`, `PR_42576.sql`...
 - 자료구조 직접 구현은 `Basic_자료구조명.java`로 통일한다
 ---
 ## 📨 Commit convention
@@ -33,6 +33,8 @@
 ex) git commit -m "Create: Stack BOJ 1517"
 
 ex) git commit -m "Create: Hash Basic"
+
+ex) git commit -m "Create: sql PR 59405"
 
 - 알고리즘분류를 특정짓기 어려울 때는 `etc`로 지정한다.
 
