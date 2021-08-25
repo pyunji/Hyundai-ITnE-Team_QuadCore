@@ -19,4 +19,8 @@ class Solution {
 		}
         return answer;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4e4704e3e161c716ff387622b1e3644a42a5b777
