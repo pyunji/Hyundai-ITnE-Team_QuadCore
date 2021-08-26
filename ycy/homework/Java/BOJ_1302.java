@@ -23,7 +23,7 @@ public class Main {
         for(String key : map.keySet()) {
             int value = map.get(key);//책의 수를 넣는다.
  
-            //string을 비교하는 compareTo 메서드는 사전순서로 maxBook이 key보다 앞에오는 경우 양수, 아닌경우 음수 반환
+            //string을 비교하는 compareTo 메서드는 사전순서로 maxBook이 key보다 앞에오는 경우 음수, 아닌경우 양수 반환
             if(max == value && maxBook.compareTo(key) > 0) {
                 maxBook = key;
                 max = value;
