@@ -29,7 +29,6 @@ public class Main {
 		for(String name : arr) {
 			sb.append(name).append("\n");
 		}
-		System.out.println(sb);
-		
+		System.out.println(sb);		
 	}
 }
