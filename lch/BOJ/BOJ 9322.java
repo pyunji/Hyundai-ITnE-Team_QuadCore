@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-
+ 
 public class Main {
     static Map<Integer, Integer> patternMap; 
     static int N; 
