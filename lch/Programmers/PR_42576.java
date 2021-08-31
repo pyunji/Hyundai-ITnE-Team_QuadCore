@@ -1,6 +1,6 @@
 import java.util.HashMap;
 import java.util.Map.Entry;
-
+ 
 class Solution {
     public String solution(String[] participant, String[] completion) {
         String answer = "";
