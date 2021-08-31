@@ -16,8 +16,8 @@ public class Main {
     }
 
     int sum = 0;
-    for (Integer i : stack) // 스택의 데이터를 i에 대입 반복
+    for (Integer i : stack) // 스택의 데이터를 i에 대입하여 반복
       sum += i;             // 스택에 담긴 합 구함
     System.out.println(sum);
-  }
+  } 
 }
