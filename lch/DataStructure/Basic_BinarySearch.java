@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class main{
 
   //이진 탐색 구현(반복문)
