@@ -19,17 +19,17 @@ class Solution {
     }
 
     public void dfs(String begin, String target, String[] words, int count) {
-        /* 4. 재귀 탈출 조건 정의 */
+        /* 3. 재귀 탈출 조건 정의 */
         if(begin.equals(target)) {
             answer = Math.min(answer, count);
             return;
         }
 
-        /* 5. 루프를 돌릴 탐색 범위 설정 */
+        /* 4. 루프를 돌릴 탐색 범위 설정 */
         for(int i = 0; i < words.length; i++) {
-            /* 6. 탐색 성공 조건 설정 */
+            /* 5. 탐색 성공 조건 설정 */
             if(!chk[i] && canConvert(begin, words[i])) {
-                /* 7. 방문 true -> dfs -> 방문 false */
+                /* 6. 방문 true -> dfs -> 방문 false */
                 chk[i] = true;
                 dfs(words[i], target, words, count + 1);
                 chk[i] = false;
@@ -52,15 +52,8 @@ class Solution {
         /* 1. 데이터 초기화 */
         chk = new boolean[words.length];
         
-        /* 2. 루프를 돌면서 dfs 진입 가능한 좌표 찾기 */
-        for(int i = 0; i < words.length; i++) {
-            if (!chk[i] && canConvert(begin, words[i])) {
-                /* 3. dfs 진입이 가능한 경우 방문 처리를 하고 다시 false로 풀어줌 */
-                chk[i] = true;
-                dfs(words[i], target, words, 1);
-                chk[i] = false;
-            }
-        }
+        /* 2. 문제에서 진입 조건을 정해주므로 루프를 돌면서 dfs 진입 가능한 좌표를 찾을 필요가 없음 */
+        dfs(begin, target, words, 0);
 
         return answer;
     }
